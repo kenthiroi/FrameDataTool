@@ -16,7 +16,6 @@ const closeL = {
   oncounterhit: '+8',
   clash: '1',
   motion: ['l'],
-  description: "Seox's fastest normal.\nBasic, +2 on block c.L. Useful for abare due to its speed as well as pressure due to its frame advantage. Seox can use two of these in a row and still be in range for a 2L, making his pressure a bit scarier than average."
 };
 const closeM = {
   moveName: 'Close Medium',
@@ -31,7 +30,6 @@ const closeM = {
   oncounterhit: '+8',
   clash: '3',
   motion: ['m'],
-  description: "Great frametrap button, but frametraps after are difficult.\nLinks into c.L on crouching.\nLinks into c.H on counterhit.\nThe Granblue c.M. Useful as a frame trap from lights as its more rewarding on counterhit."
 };
 const closeH = {
   moveName: 'Close Heavy',
@@ -46,7 +44,6 @@ const closeH = {
   oncounterhit: '+1',
   clash: '5',
   motion: ['h'],
-  description: "Combos into 236M.\nHigh hitstun c.H that allows for combos not possible from Seox's autocombo without a crouch confirm. Quite safe on block and makes for a high damage combo starter. Any L button into c.H will frame trap 6-frame buttons, but keep in mind that it will leave you minus."
 };
 
 // auto combos
@@ -63,7 +60,6 @@ const auto1 = {
   oncounterhit: '+5',
   clash: '3',
   motion: ['l', 'l'],
-  description: "Mostly relegated to combo and blockstring filler. Seox can effectively frametrap from these with 236M, which in turn can make them useful as pressure reset points once respect is established."
 };
 const auto2 = {
   moveName: 'Auto Combo 3rd hit',
@@ -78,7 +74,6 @@ const auto2 = {
   oncounterhit: '+8',
   clash: '4',
   motion: ['l', 'l', 'l'],
-  description: "Mostly relegated to combo and blockstring filler. Seox can effectively frametrap from these with 236M, which in turn can make them useful as pressure reset points once respect is established."
 };
 const autoHighEnder = {
   moveName: 'Auto Combo High Ender',
@@ -123,7 +118,6 @@ const far5L = {
   oncounterhit: '+3',
   clash: '2',
   motion: ['l'],
-  description: "Mostly a punish tool for quick-recovering moves as Seox's plus on block lights have comparable range. Using three 2Ls will leave Seox out of range."
 };
 const far5M = {
   moveName: 'Far Medium',
@@ -138,7 +132,6 @@ const far5M = {
   oncounterhit: '+5',
   clash: '3',
   motion: ['m'],
-  description: "Seox's longest poke. Cancel into rekkas for pressure and combos."
 };
 const far5H = {
   moveName: 'Far Heavy',
@@ -153,7 +146,51 @@ const far5H = {
   oncounterhit: '+5',
   clash: '4',
   motion: ['h'],
-  description: "Same startup as f.M.\nComparable startup and range to f.M but with higher damage, clash level, and recovery. Excellent as a whiff punish tool as its higher hitstun gives more time to confirm."
+};
+
+// dash normals
+
+const lDash = { 
+  moveName: 'L Dash Attack', 
+  altName: '-', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
+  active: '-', 
+  recovery: '-', 
+  onblock: '-', 
+  onhit: '-',
+  oncounterhit: '-',
+  clash: '-',
+  motion: ['-'],
+};
+const mDash = { 
+  moveName: 'M Dash Attack', 
+  altName: '-', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
+  active: '-', 
+  recovery: '-', 
+  onblock: '-', 
+  onhit: '-',
+  oncounterhit: '-',
+  clash: '-',
+  motion: ['-'],
+};
+const hDash = { 
+  moveName: 'H Dash Attack', 
+  altName: '-', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
+  active: '-', 
+  recovery: '-', 
+  onblock: '-', 
+  onhit: '-',
+  oncounterhit: '-',
+  clash: '-',
+  motion: ['-'],
 };
 
 // regular normals
@@ -170,7 +207,6 @@ const n2L = {
   oncounterhit: '+8',
   clash: '1',
   motion: ['2', 'l'],
-  description: "Excellent pressure tool.\nSeox can fit three of these in a row and still be in range for another frame trap with f.M or 2M. Links into c.M on standing opponents and 2M on crouching opponents."
 };
 const n2M = {
   moveName: 'Crouch Medium',
@@ -185,7 +221,6 @@ const n2M = {
   oncounterhit: '+6',
   clash: '3',
   motion: ['2', 'm'],
-  description: "One frame faster than f.M at the cost of a little reach. Great frame advantage for a 2M normal and quite difficult to whiff punish."
 };
 const n2H = {
   moveName: 'Crouch Heavy',
@@ -200,7 +235,6 @@ const n2H = {
   oncounterhit: '0',
   clash: '4',
   motion: ['2', 'h'],
-  description: "Seox's main anti-air.\nConverts into good damage on AA CH and decent damage on normal AA connect."
 };
 const n2U = {
   moveName: 'Crouch Unique',
@@ -215,7 +249,6 @@ const n2U = {
   oncounterhit: 'HKD (+48)',
   clash: '3',
   motion: ['2', 'u'],
-  description: "Fast, but too slow to use as a crouch confirm.\nPrimarily a combo tool due to its long recovery and high disadvantage on block. One frame slower than 2M and the same speed as f.M and f.H gives it a lot of competition as a poke."
 };
 
 // jump normals
@@ -232,7 +265,6 @@ const jL = {
   oncounterhit: '-',
   clash: '2',
   motion: ['l'],
-  description: "Active until landing.\nGreat horizontal reach."
 };
 const jM = { 
   moveName: 'Jump Medium', 
@@ -247,7 +279,6 @@ const jM = {
   oncounterhit: '-',
   clash: '2',
   motion: ['m'],
-  description: "Seox's crossup normal.\nInstant j.M can hit taller standing characters like Katalina and Percival. Other than that, use this when it's hard to tell what side Seox will land on."
 };
 const jH = { 
   moveName: 'Jump Heavy', 
@@ -262,7 +293,6 @@ const jH = {
   oncounterhit: '-',
   clash: '3',
   motion: ['h'],
-  description: "Seox's primary jump-in.\nj.H has the most downwards reach of all of Seox's air normals and has decent horizontal range too, making it a great jump-in button for fireball punishes."
 };
 const jU = { 
   moveName: 'Jump Unique', 
@@ -277,7 +307,6 @@ const jU = {
   oncounterhit: '-',
   clash: '2',
   motion: ['u'],
-  description: "Can be advantageous if it hits an opponent's foot area.\nPretty slow but serves its purpose of throwing off anti-air timings. Leads to a combo if it connects late on a crouching opponent. Part of what makes Seox's approach so good."
 };
 
 // unique action
@@ -294,7 +323,6 @@ const lv1U = {
   oncounterhit: '+7',
   clash: '-',
   motion: ['u'],
-  description: "Seox sends out a shadow clone of himself as a projectile. Unlike other projectiles in the game, this projectile can be attacked and will disappear if hit. Holding the button will make Seox teleport to wherever the fireball connects, but will also make him take damage if the fireball is hit by an attack. The held version combos into c.L."
 };
 const lv2U = { 
   moveName: 'New Perspective', 
@@ -309,7 +337,6 @@ const lv2U = {
   oncounterhit: '+8',
   clash: '-',
   motion: ['u'],
-  description: "Seox sends out a shadow clone of himself as a projectile. Unlike other projectiles in the game, this projectile can be attacked and will disappear if hit. Holding the button will make Seox teleport to wherever the fireball connects, but will also make him take damage if the fireball is hit by an attack. The held version combos into c.L."
 };
 
 const groundThrow = { 
@@ -324,7 +351,6 @@ const groundThrow = {
   oncounterhit: '-',
   clash: '-',
   motion: ['l', 'm', 'or', 'l', 'u'],
-  description: "",
 };
 const backThrow = { 
   moveName: 'Back Throw', 
@@ -338,7 +364,6 @@ const backThrow = {
   oncounterhit: '-',
   clash: '-',
   motion: ['4', 'l', 'm', 'or', '4', 'l', 'u'],
-  description: "",
 };
 const airThrow = { 
   moveName: 'Air Throw', 
@@ -352,7 +377,6 @@ const airThrow = {
   oncounterhit: '-',
   clash: '-',
   motion: ['l', 'm', 'or', 'l', 'u'],
-  description: ""
 };
 
 const uOverhead = { 
@@ -368,7 +392,6 @@ const uOverhead = {
   oncounterhit: '+13',
   clash: '5',
   motion: ['m', 'u'],
-  description: ""
 };
 
 //Tactical moves
@@ -385,7 +408,6 @@ const tacticalRush = {
   oncounterhit: '-',
   clash: '-',
   motion: ['6', 'm', 'h'],
-  description: '',
 }
 
 const tacticalRushCancel = {
@@ -400,7 +422,6 @@ const tacticalRushCancel = {
   oncounterhit: 'KD (+22)',
   clash: '-',
   motion: ['6', 'm', 'h'],
-  description: 'Strike invulnerable on frame 1-22.',
 }
 
 const tacticalShift = {
@@ -415,7 +436,6 @@ const tacticalShift = {
   oncounterhit: '-',
   clash: '-',
   motion: ['4', 'm', 'h'],
-  description: 'Invincible on frame 1-15.',
 }
 
 const overdriveActivation = {
@@ -430,7 +450,6 @@ const overdriveActivation = {
   oncounterhit: 'KD (+19)',
   clash: '-',
   motion: ['m', 'h'],
-  description: 'Invincible on frame 1-28, counterhit state on frame 29-61.'
 }
 
 // fireballs
@@ -447,7 +466,6 @@ const lRekka = {
   oncounterhit: '-10',
   clash: '2',
   motion: ['236', 'l', 'or', 'a'],
-  description: "Seox's main special move, a rekka that leads into different follow-ups. Each starter can turn into a myriad of frame traps and pressure resets and is his main pressure and combo tool. Think carefully about when you should spend the EX version.\nHits twice with a blue trail.\nSeox's main combo ender and pressure extender. Combos from pretty much anything. Leads to the 6M follow-up on crouching opponents, which gives Seox more combo options."
 };
 const mRekka = { 
   moveName: 'M Six-Claw Execution', 
@@ -462,7 +480,6 @@ const mRekka = {
   oncounterhit: '-2',
   clash: '4',
   motion: ['236', 'm', 'or', 'a', 'm'],
-  description: "Seox's main special move, a rekka that leads into different follow-ups. Each starter can turn into a myriad of frame traps and pressure resets and is his main pressure and combo tool. Think carefully about when you should spend the EX version.\nHits once with a red trail.\nSituational combo extender and frametrap tool. Combos from autocombo on crouching opponents and c.H always. Always combos into the 6M follow-up."
 };
 const hRekka = { 
   moveName: 'H Six-Claw Execution', 
@@ -477,7 +494,6 @@ const hRekka = {
   oncounterhit: '0',
   clash: '4',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "Seox's main special move, a rekka that leads into different follow-ups. Each starter can turn into a myriad of frame traps and pressure resets and is his main pressure and combo tool. Think carefully about when you should spend the EX version.\nYellow effect makes it easy to distinguish.\nCombos from anything and always leads to the 6M follow-up for good damage. Be careful using this as you lose Seox's main combo and pressure tool."
 };
 const lRekkaKick = {
   moveName: 'L Archdemon Kick', 
@@ -492,7 +508,6 @@ const lRekkaKick = {
   oncounterhit: '0',
   clash: '5',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "L version keeps opponent grounded. Blue trail.M version launches on hit. Red trail.\nCancels into any other follow-up.\nSeox's rekka extender. The M version always combos from 236M and 236H, but only combos from 236L on crouching opponents."
 };
 const mRekkaKick = {
   moveName: 'M Archdemon Kick', 
@@ -507,7 +522,6 @@ const mRekkaKick = {
   oncounterhit: 'KD',
   clash: '5',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "L version keeps opponent grounded. Blue trail.M version launches on hit. Red trail.\nCancels into any other follow-up.\nSeox's rekka extender. The M version always combos from 236M and 236H, but only combos from 236L on crouching opponents."
 };
 const hRekkaKick = {
   moveName: 'H Archdemon Kick', 
@@ -522,7 +536,6 @@ const hRekkaKick = {
   oncounterhit: 'KD',
   clash: '5',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "L version keeps opponent grounded. Blue trail.M version launches on hit. Red trail.\nCancels into any other follow-up.\nSeox's rekka extender. The M version always combos from 236M and 236H, but only combos from 236L on crouching opponents."
 };
 const lRekkaEnder = {
   moveName: 'L Wolf\'s Howl', 
@@ -537,7 +550,6 @@ const lRekkaEnder = {
   oncounterhit: 'KD',
   clash: '5',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "L version combos from anything.\nM version combos from M Archdemon kick.\nM version wallbounces on counterhit.\nA thrusting attack that sends the opponent flying. L version is your standard ground combo ender. M version works as a frametrap and another potential crouch confirm point. Going for a frametrap with the M version is very dangerous but leads to excellent damage in the corner."
 };
 const mRekkaEnder = {
   moveName: 'M Wolf\'s Howl',  
@@ -552,7 +564,6 @@ const mRekkaEnder = {
   oncounterhit: 'KD',
   clash: '5',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "L version combos from anything.\nM version combos from M Archdemon kick.\nM version wallbounces on counterhit.\nA thrusting attack that sends the opponent flying. L version is your standard ground combo ender. M version works as a frametrap and another potential crouch confirm point. Going for a frametrap with the M version is very dangerous but leads to excellent damage in the corner."
 };
 const hRekkaEnder = {
   moveName: 'H Wolf\'s Howl',  
@@ -567,7 +578,6 @@ const hRekkaEnder = {
   oncounterhit: 'KD',
   clash: '5',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "L version combos from anything.\nM version combos from M Archdemon kick.\nM version wallbounces on counterhit.\nA thrusting attack that sends the opponent flying. L version is your standard ground combo ender. M version works as a frametrap and another potential crouch confirm point. Going for a frametrap with the M version is very dangerous but leads to excellent damage in the corner."
 };
 const lRekkaOverhead = {
   moveName: 'L Snake Bite',  
@@ -582,7 +592,6 @@ const lRekkaOverhead = {
   oncounterhit: '+9',
   clash: '5',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "L version has a blue trail and is a little faster. Links into c.L.\nM version has a red trail and links into c.M.\nSeox's pressure reset option from Six-Claw Execution. Always plus on block and ground bounces from 236H allowing for extended combos. Gives a closer knockdown than M Wolf's Howl on opponents launched from M Archdemon Kick at the cost of damage."
 }
 const mRekkaOverhead = {
   moveName: 'M Snake Bite',  
@@ -597,7 +606,6 @@ const mRekkaOverhead = {
   oncounterhit: '+10',
   clash: '5',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "L version has a blue trail and is a little faster. Links into c.L.\nM version has a red trail and links into c.M.\nSeox's pressure reset option from Six-Claw Execution. Always plus on block and ground bounces from 236H allowing for extended combos. Gives a closer knockdown than M Wolf's Howl on opponents launched from M Archdemon Kick at the cost of damage."
 }
 const hRekkaOverhead = {
   moveName: 'H Snake Bite',  
@@ -612,7 +620,6 @@ const hRekkaOverhead = {
   oncounterhit: '+10',
   clash: '5',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "L version has a blue trail and is a little faster. Links into c.L.\nM version has a red trail and links into c.M.\nSeox's pressure reset option from Six-Claw Execution. Always plus on block and ground bounces from 236H allowing for extended combos. Gives a closer knockdown than M Wolf's Howl on opponents launched from M Archdemon Kick at the cost of damage."
 }
 const rekkaTeleport6 = {
   moveName: 'Shadow Trace (Forward)',  
@@ -627,7 +634,6 @@ const rekkaTeleport6 = {
   oncounterhit: '-8',
   clash: '-',
   motion: ['6', 'u'],
-  description: "Command dash, can phase through opponents.\nA movement option off of Six-Claw Execution. Seox can dash forward or backward based on input. The backdash version is useful for gaining space and is generally quite safe. The forward version is great for sneaking in a pressure reset on an opponent respecting a potential frame trap or looking for Snake Bite."
 }
 const rekkaTeleport4 = {
   moveName: 'Shadow Trace (Back)',  
@@ -642,7 +648,6 @@ const rekkaTeleport4 = {
   oncounterhit: '-15',
   clash: '-',
   motion: ['4', 'u'],
-  description: "Command dash, can phase through opponents.\nA movement option off of Six-Claw Execution. Seox can dash forward or backward based on input. The backdash version is useful for gaining space and is generally quite safe. The forward version is great for sneaking in a pressure reset on an opponent respecting a potential frame trap or looking for Snake Bite."
 }
 
 
@@ -660,7 +665,6 @@ const lParry = {
   oncounterhit: 'KD',
   clash: '-',
   motion: ['623', 'l', 'or', '6', 'a'],
-  description: "Seox goes into a counter stance. All strikes can be parried and counterattack against. If you hold the button while parrying an attack, Seox will reposition himself depending on the version.\n\nL version moves forward if held.\nM version moves up if held.\nNot instant but useful to get around predictable things in neutral like fireballs."
 };
 const mParry = { 
   moveName: 'M Thunderflash', 
@@ -675,7 +679,6 @@ const mParry = {
   oncounterhit: 'KD',
   clash: '-',
   motion: ['623', 'm', 'or', '6', 'a', 'm'],
-  description: "Seox goes into a counter stance. All strikes can be parried and counterattack against. If you hold the button while parrying an attack, Seox will reposition himself depending on the version.\n\nL version moves forward if held.\nM version moves up if held.\nNot instant but useful to get around predictable things in neutral like fireballs."
 };
 const hParry = { 
   moveName: 'H Thunderflash', 
@@ -690,7 +693,6 @@ const hParry = {
   oncounterhit: 'HKD',
   clash: '-',
   motion: ['623', 'h', 'or', '6', 'a', 'h'],
-  description: "Seox goes into a counter stance. All strikes can be parried and counterattack against. If you hold the button while parrying an attack, Seox will reposition himself depending on the version.\nMoves forward if held.\nActive from frame 1, but shorter active time than non-EX versions.\nSeox's counter reversal. Vulnerable to throws but beats safejumps and has the added benefit of also being a movement tool."
 };
 
 // rekka
@@ -707,7 +709,6 @@ const lCrossSlash = {
   oncounterhit: '+2',
   clash: '-',
   motion: ['214', 'l', 'or', '2', 'a'],
-  description: "Fires a projectile.\nHard to zone with as the projectile moves downwards. Useful as a meaty after a tech flipout or as a way to secure a certain part of the screen."
 };
 const mCrossSlash = { 
   moveName: 'M Gate of Demons', 
@@ -722,7 +723,6 @@ const mCrossSlash = {
   oncounterhit: 'KD',
   clash: '4',
   motion: ['214', 'm', 'or', '4', 'a'],
-  description: "Claw dive.\nSeox's best meterless combo out of AA 2H."
 };
 const hCrossSlash = { 
   moveName: 'H Gate of Demons', 
@@ -737,7 +737,6 @@ const hCrossSlash = {
   oncounterhit: '+7',
   clash: '4',
   motion: ['214', 'h', 'or', '2', 'a', 'h'],
-  description: "Two-hit projectile like 214L.\nCombo extender from c.H.\nPlus on block and allows for combo and pressure extensions."
 };
 const lAirCrossSlash = { 
   moveName: 'L Gate of Demons (Air)', 
@@ -752,7 +751,6 @@ const lAirCrossSlash = {
   oncounterhit: 'KD',
   clash: '3',
   motion: ['214', 'l', 'or', '2', 'a'],
-  description: "Claw strike, bounces back on hit/block."
 };
 const mAirCrossSlash = { 
   moveName: 'M Gate of Demons (Air)', 
@@ -767,7 +765,6 @@ const mAirCrossSlash = {
   oncounterhit: 'KD',
   clash: '3',
   motion: ['214', 'm', 'or', '4', 'a'],
-  description: "Claw strike, bounces forward on hit/block.\nRetains air options upon connect, allowing for a followup.\nOpens up combo extensions in the air."
 };
 const hAirCrossSlash = { 
   moveName: 'H Gate of Demons (Air)', 
@@ -782,7 +779,6 @@ const hAirCrossSlash = {
   oncounterhit: '-',
   clash: '3',
   motion: ['214', 'h', 'or', '2', 'a', 'h'],
-  description: "Air fireball.\nJust as useful as the ground version. Using it in combos is more difficult but it's a lot more applicable in neutral."
 };
 
 const lWalljump = {
@@ -798,7 +794,6 @@ const lWalljump = {
   oncounterhit: 'KD',
   clash: '3',
   motion: ['2', '8', 'l', 'or', '2', 'a'],
-  description: "Seox's walldive attack. Has projectile invulnerability can be used to read and punish fireballs. Framedata on block varies depending on the height it hits the opponent. The lower it hits the more plus it becomes.\nDives at a sharp, downwards angle.\nMostly useful as a fakeout to make your opponent whiff an AA."
 };
 const mWalljump = {
   moveName: 'M Empty Hand', 
@@ -813,7 +808,6 @@ const mWalljump = {
   oncounterhit: 'KD',
   clash: '3',
   motion: ['2', '8', 'm', 'or', '2', 'a', 'm'],
-  description: "Seox's walldive attack. Has projectile invulnerability can be used to read and punish fireballs. Framedata on block varies depending on the height it hits the opponent. The lower it hits the more plus it becomes.\nDives and travels about halfscreen.\nThis is the best non-EX version to go over fireballs in neutral, but its speed and input makes this difficult to do on reaction."
 };
 const hWalljump = {
   moveName: 'H Empty Hand', 
@@ -828,7 +822,6 @@ const hWalljump = {
   oncounterhit: 'HKD (+57)',
   clash: '3',
   motion: ['2', '8', 'h', 'or', '2', 'a', 'h'],
-  description: "Seox's walldive attack. Has projectile invulnerability can be used to read and punish fireballs. Framedata on block varies depending on the height it hits the opponent. The lower it hits the more plus it becomes.\nDives to opponent.\nCan be held.\nCan lead to a combo if it counterhits but is quite spacing-dependant."
 }
 
 // skybound art
@@ -845,7 +838,6 @@ const sba = {
   oncounterhit: 'HKD (S:+44, T:+34)',
   clash: '-',
   motion: ['236', '236', 'h', 'or', '236', 'a'],
-  description: "A claw strike with invulnerability. If it hits close, Seox will follow up with a series of cinematic attacks. The range of this super is short compared to other thrust supers and the range that will activate his cinematic is even smaller, around f.M range."
 };
 const installSba = { 
   moveName: 'Six-Ruin\'s Enlightenment', 
@@ -860,7 +852,6 @@ const installSba = {
   oncounterhit: '-',
   clash: '-',
   motion: ['214', '214', 'h', 'or', '214', 'a'],
-  description: "Seox creates two shadow clones who will mimic his actions and attack with him. While the Skybound Art is active, Seox's attacks will hit multiple times."
 };
 const ssba = { 
   moveName: 'Catastrophe', 
@@ -875,7 +866,6 @@ const ssba = {
   oncounterhit: 'HKD (S:+30, T:+40)',
   clash: '-',
   motion: ['236', '236', 'u', 'or', '236', 'a', 'u'],
-  description: "An advancing attack will invulnerability. On a close hit, Seox brings out the shadow clones and unleashes a cinematic beatdown."
 };
 
 

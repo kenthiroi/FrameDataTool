@@ -16,7 +16,6 @@ const closeL = {
   oncounterhit: '+8',
   clash: '1',
   motion: ['l'],
-  description: "+2 on block, excellent for pressure.\nLinks into c.M on hit.\nBelial's main pressure normal alongside 2L."
 };
 const closeM = {
   moveName: 'Close Medium',
@@ -31,7 +30,6 @@ const closeM = {
   oncounterhit: '+8',
   clash: '3',
   motion: ['m'],
-  description: "Links into 2L and c.L on crouching hit.\nLinks into c.H on counterhit."  
 };
 const closeH = {
   moveName: 'Close Heavy',
@@ -46,7 +44,6 @@ const closeH = {
   oncounterhit: '+1',
   clash: '5',
   motion: ['h'],
-  description: "Two hits means counterhit links are limited.\nAvatar Belial's highest damage punish starter."
 };
 
 // auto combos
@@ -63,7 +60,6 @@ const auto1 = {
   oncounterhit: '+5',
   clash: '3',
   motion: ['l', 'l'],
-  description: "Standard combo filler. Be careful with this on block as the last hit is punishable unlike other autocombos."
 };
 const auto2 = {
   moveName: 'Auto Combo 3rd hit',
@@ -78,7 +74,6 @@ const auto2 = {
   oncounterhit: '+8',
   clash: '4',
   motion: ['l', 'l', 'l'],
-  description: "Standard combo filler. Be careful with this on block as the last hit is punishable unlike other autocombos."
 };
 const autoHighEnder = {
   moveName: 'Auto Combo High Ender',
@@ -123,7 +118,6 @@ const far5L = {
   oncounterhit: '+2',
   clash: '2',
   motion: ['l'],
-  description: "Belial's fastest button to stop people from running in on him. Always links out of 2L and c.L but should only really be used if no other options work. Also functions as a frame trap, but will lose to 5-frame normals if used after 2L."
 };
 const far5M = {
   moveName: 'Far Medium',
@@ -138,7 +132,6 @@ const far5M = {
   oncounterhit: '-2',
   clash: '3',
   motion: ['m'],
-  description: "Two-hit far medium. Unsafe on block unlike normal Belial's version of the move."
 };
 const far5H = {
   moveName: 'Far Heavy',
@@ -153,7 +146,51 @@ const far5H = {
   oncounterhit: '+3',
   clash: '4',
   motion: ['h'],
-  description: "Shorter than it looks.\nAvatar Belial's longest range poke next to 2U. Always combos into 214L."
+};
+
+// dash normals
+
+const lDash = { 
+  moveName: 'L Dash Attack', 
+  altName: '-', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
+  active: '-', 
+  recovery: '-', 
+  onblock: '-', 
+  onhit: '-',
+  oncounterhit: '-',
+  clash: '-',
+  motion: ['-'],
+};
+const mDash = { 
+  moveName: 'M Dash Attack', 
+  altName: '-', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
+  active: '-', 
+  recovery: '-', 
+  onblock: '-', 
+  onhit: '-',
+  oncounterhit: '-',
+  clash: '-',
+  motion: ['-'],
+};
+const hDash = { 
+  moveName: 'H Dash Attack', 
+  altName: '-', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
+  active: '-', 
+  recovery: '-', 
+  onblock: '-', 
+  onhit: '-',
+  oncounterhit: '-',
+  clash: '-',
+  motion: ['-'],
 };
 
 // regular normals
@@ -170,7 +207,6 @@ const n2L = {
   oncounterhit: '+6',
   clash: '1',
   motion: ['2', 'l'],
-  description: "Only 0 on block, use c.L when possible.\nAvatar Belial's version of a mid jab. Has some issues frame trapping due to being less plus than average, but it is a 5-frame crouching jab."
 };
 const n2M = {
   moveName: 'Crouch Medium',
@@ -185,7 +221,6 @@ const n2M = {
   oncounterhit: 'KD(+6)',
   clash: '2',
   motion: ['2', 'm'],
-  description: "Knocks opponent down on hit.\nAvatar Belial's fastest low at 6 frames. Does not combo into anything but special moves due to its knockdown properties and only consistently combos into 214L."
 };
 const n2H = {
   moveName: 'Crouch Heavy',
@@ -200,7 +235,6 @@ const n2H = {
   oncounterhit: '0',
   clash: '4',
   motion: ['2', 'h'],
-  description: "Avatar Belial's highest reward anti-air."
 };
 const n2U = {
   moveName: 'Crouch Unique',
@@ -215,7 +249,6 @@ const n2U = {
   oncounterhit: 'HKD(+48)',
   clash: '3',
   motion: ['2', 'u'],
-  description: "Hard knockdown on hit."
 };
 
 // jump normals
@@ -232,7 +265,6 @@ const jL = {
   oncounterhit: '-',
   clash: '2',
   motion: ['l'],
-  description: "Active until landing.\nHits entirely below and in front of Avatar Belial, making it a poor air-to-air option."
 };
 const jM = { 
   moveName: 'Jump Medium', 
@@ -247,7 +279,6 @@ const jM = {
   oncounterhit: '-',
   clash: '2',
   motion: ['m'],
-  description: "Early active frames can cross up.\nAvatar Belial's longest range air normal and the most useful if you don't know which side he'll land on."
 };
 const jH = { 
   moveName: 'Jump Heavy', 
@@ -262,7 +293,6 @@ const jH = {
   oncounterhit: '-',
   clash: '3',
   motion: ['h'],
-  description: "Avatar Belial's biggest jump-in."
 };
 const jU = { 
   moveName: 'Jump Unique', 
@@ -277,7 +307,6 @@ const jU = {
   oncounterhit: '-',
   clash: '2',
   motion: ['u'],
-  description: "Sends Belial downwards at a 40° angle.\nBounces off opponent on hit or block.\nAvatar Belial's divekick."
 };
 
 // unique action
@@ -294,7 +323,6 @@ const laserBeam = {
   oncounterhit: '+12',
   clash: '-',
   motion: ['u'],
-  description: "Whiffs against crouching opponents.\nCharged version knocks down on hit.\nThe first of Avatar Belial's three projectiles. Stops opponents from counterzoning due to the beam having negligable travel time. Charging the beam can also catch Rolls during their recovery."
 };
 
 const laserBeamCharged = { 
@@ -310,7 +338,6 @@ const laserBeamCharged = {
   oncounterhit: 'KD',
   clash: '-',
   motion: ['u'],
-  description: "Whiffs against crouching opponents.\nCharged version knocks down on hit.\nThe first of Avatar Belial's three projectiles. Stops opponents from counterzoning due to the beam having negligable travel time. Charging the beam can also catch Rolls during their recovery."
 };
 
 const ABelCancel5U = { 
@@ -326,7 +353,6 @@ const ABelCancel5U = {
   oncounterhit: 'KD',
   clash: '-',
   motion: ['u'],
-  description: "Invincible from 11?~20?. Startup/Active/Recovery are rough estimates.\nUsable after any special move connects except for Blind Devotion.\nCosts 500 health upon use.\nAvatar Belial's unique special move follow-ups. They both have different uses but complement his gameplan equally well.\nTeleports in front of the opponent.\nLaunches upwards.\nInvincible during startup and active frames.\nWhile Belial can't get a combo from this follow-up normally, it links into f.M on counterhit. The invincibility allows him to call out mashing and force respect after his special moves, but the health cost also adds to the potential punish if it is blocked. Better to threaten with than to use in most cases."
 };
 
 const ABelCancel8U = { 
@@ -342,7 +368,6 @@ const ABelCancel8U = {
   oncounterhit: 'HKD (+55)',
   clash: '3',
   motion: ['u'],
-  description: "Invincible from 11?~23, airborne from 24~43? Startup/Active are rough estimates.\nUsable after any special move connects except for Blind Devotion.\nCosts 500 health upon use.\nAvatar Belial's unique special move follow-ups. They both have different uses but complement his gameplan equally well.\nTeleports above the opponent and stomps down.\nForces a hard knockdown on hit.\nAvatar Belial's other follow-up makes for an excellent combo ender. It will always give a hard knockdown on hit, allowing for consistent setplay."
 };
 
 const groundThrow = { 
@@ -357,7 +382,6 @@ const groundThrow = {
   oncounterhit: '-',
   clash: '-',
   motion: ['l', 'm', 'or', 'l', 'u'],
-  description: "Same animation as Belial's.\nAllows for a safejump with j.H anywhere on the screen."
 };
 
 const backThrow = { 
@@ -372,7 +396,6 @@ const backThrow = {
   oncounterhit: '-',
   clash: '-',
   motion: ['l', 'm', 'or', 'l', 'u'],
-  description: "Same animation as Belial's.\nAllows for a safejump with j.H anywhere on the screen."
 };
 
 const airThrow = { 
@@ -387,7 +410,6 @@ const airThrow = {
   oncounterhit: '-',
   clash: '-',
   motion: ['l', 'm', 'or', 'l', 'u'],
-  description: ""
 };
 
 //Tactical moves
@@ -404,7 +426,6 @@ const tacticalRush = {
   oncounterhit: '-',
   clash: '-',
   motion: ['6', 'm', 'h'],
-  description: '',
 }
 
 const tacticalRushCancel = {
@@ -419,7 +440,6 @@ const tacticalRushCancel = {
   oncounterhit: 'KD (+22)',
   clash: '-',
   motion: ['6', 'm', 'h'],
-  description: 'Strike invulnerable on frame 1-22.',
 }
 
 const tacticalShift = {
@@ -434,7 +454,6 @@ const tacticalShift = {
   oncounterhit: '-',
   clash: '-',
   motion: ['4', 'm', 'h'],
-  description: 'Invincible on frame 1-15.',
 }
 
 const overdriveActivation = {
@@ -449,7 +468,6 @@ const overdriveActivation = {
   oncounterhit: 'KD (+19)',
   clash: '-',
   motion: ['m', 'h'],
-  description: 'Invincible on frame 1-28, counterhit state on frame 29-61.'
 }
 
 const uOverhead = { 
@@ -465,7 +483,6 @@ const uOverhead = {
   oncounterhit: '+13',
   clash: '5',
   motion: ['m', 'u'],
-  description: "Forces crouching on hit."
 };
 
 // fireballs
@@ -482,7 +499,6 @@ const lFireball = {
   oncounterhit: '-2',
   clash: '-',
   motion: ['236', 'l', 'or', 'a'],
-  description: "Projectile travels until it hits the opponent, then turns into a three-hit projectile before de-spawning.\nL Version is unsafe at close range, safe at half max range, and plus at max range.\nH Version costs 500 health upon use.\nBelial creates an earthquake that travels around half the screen's length. The H version has enough hitstun to start a combo and enough blockstun to be plus at close range."
 };
 const mFireball = { 
   moveName: 'Destructive Delusions', 
@@ -497,7 +513,6 @@ const mFireball = {
   oncounterhit: '-2',
   clash: '-',
   motion: ['236', 'm', 'or', 'a', 'm'],
-  description: "Belial flings five Goetia projectiles in an arc. The bottom projectile does the most damage, followed by the second lowest, then the rest deal 100. Excellent complement to 236L/H as it covers a massive amount of air space."
 };
 const hFireball = { 
   moveName: 'H Rejected Truth', 
@@ -512,7 +527,6 @@ const hFireball = {
   oncounterhit: '+6',
   clash: '-',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "Projectile travels until it hits the opponent, then turns into a three-hit projectile before de-spawning.\nL Version is unsafe at close range, safe at half max range, and plus at max range.\nH Version costs 500 health upon use.\nBelial creates an earthquake that travels around half the screen's length. The H version has enough hitstun to start a combo and enough blockstun to be plus at close range."
 };
 
 // dragon punches
@@ -529,7 +543,6 @@ const lUppercut = {
   oncounterhit: 'KD',
   clash: '-',
   motion: ['623', 'l', 'or', '6', 'a'],
-  description: "Air blockable and quite unsafe.\nPray this counterhits, otherwise it's gonna hurt Belial a lot."  
 };
 const mUppercut = { 
   moveName: 'M Blind Devotion', 
@@ -544,7 +557,6 @@ const mUppercut = {
   oncounterhit: 'KD',
   clash: '-',
   motion: ['623', 'm', 'or', '6', 'a', 'm'],
-  description: "First hit is air unblockable.\nPretty good last-minute anti-air, but generally outclassed in reward by his 2H."
 };
 const hUppercut = { 
   moveName: 'H Blind Devotion', 
@@ -559,7 +571,6 @@ const hUppercut = {
   oncounterhit: 'HKD (+38)',
   clash: '-',
   motion: ['623', 'h', 'or', '6', 'a', 'h'],
-  description: "Entirely air unblockable.\nCosts 500 health upon use.\nHigh damage and air unblockable throughout make this Belial's most consistent anti-air. It does not come cheap though, as it costs health and is very unsafe on block."
 };
 
 // rekka
@@ -576,7 +587,6 @@ const lRekka = {
   oncounterhit: '0',
   clash: '3',
   motion: ['214', 'l', 'or', '2', 'a'],
-  description: "Belial's rekka series. The follow-ups are all the same and combo into Pact enders\nFast and combos from 2M.\nStandard combo ender special. Provides a good enough knockdown, but really shines in its corner carry."
 };
 const mRekka = { 
   moveName: 'M Carnal Passion', 
@@ -591,7 +601,6 @@ const mRekka = {
   oncounterhit: '+2',
   clash: '5',
   motion: ['214', 'm', 'or', '4', 'a'],
-  description: "Belial's rekka series. The follow-ups are all the same and combo into Pact enders.\nMuch larger range at the cost of speed.\nLow crushes.\nWhile this version generally cannot be combo'd into without a counter hit, its extended range and low crush make it a better neutral tool. Avatar Belial can also catch people trying to punish it with Pact."
 };
 const hRekka = { 
   moveName: 'H Carnal Passion', 
@@ -606,7 +615,6 @@ const hRekka = {
   oncounterhit: '+2',
   clash: '4',
   motion: ['214', 'h', 'or', '2', 'a', 'h'],
-  description: "Belial's rekka series. The follow-ups are all the same and combo into Pact enders.\nCauses follow-up 2 to wallbounce.\nCosts 500 health upon use.\nCorner combo launcher. It's generally a better idea to use other specials first but Belial can still get basic knockdowns without this special using 623M or 623H."
 };
 
 const rekka2 = { 
@@ -622,7 +630,6 @@ const rekka2 = {
   oncounterhit: 'HKD',
   clash: '4',
   motion: ['214', 'l', 'or', '2', 'a'],
-  description: "Belial's rekka series. The follow-ups are all the same and combo into Pact enders."
 };
 
 const rekka3 = { 
@@ -638,7 +645,6 @@ const rekka3 = {
   oncounterhit: 'KD',
   clash: '5',
   motion: ['214', 'l', 'or', '2', 'a'],
-  description: "Belial's rekka series. The follow-ups are all the same and combo into Pact enders."
 };
 
 const lHop = {
@@ -654,7 +660,6 @@ const lHop = {
   oncounterhit: '-',
   clash: '-',
   motion: ['2', '2', 'l', 'or', '2', 'a'],
-  description: "Belial begins to float in the air using his wings. His hurtbox is quite large during this move, making it risky to use. Belial can pick between four follow-ups while he floats."
 }
 
 const mHop = {
@@ -670,7 +675,6 @@ const mHop = {
   oncounterhit: '-',
   clash: '-',
   motion: ['2', '2', 'm', 'or', '2', 'm', 'a'],
-  description: "Belial begins to float in the air using his wings. His hurtbox is quite large during this move, making it risky to use. Belial can pick between four follow-ups while he floats."
 }
 
 const hHop = {
@@ -686,7 +690,6 @@ const hHop = {
   oncounterhit: '-',
   clash: '-',
   motion: ['2', '2', 'h', 'or', '2', 'h', 'a'],
-  description: "Costs 500 health\nBelial begins to float in the air using his wings. His hurtbox is quite large during this move, making it risky to use. Belial can pick between four follow-ups while he floats."
 }
 
 const lStolas = {
@@ -702,7 +705,6 @@ const lStolas = {
   oncounterhit: 'KD',
   clash: '3',
   motion: ['2', '2', 'l', 'l'],
-  description: 'Plus on block.\nOnly hits the area directly below Belial, limiting its use.'
 }
 
 const mStolas = {
@@ -718,7 +720,6 @@ const mStolas = {
   oncounterhit: 'KD',
   clash: '3',
   motion: ['2', '2', 'm', 'l'],
-  description: 'Plus on block.\nOnly hits the area directly below Belial, limiting its use.'
 }
 
 const hStolas = {
@@ -734,7 +735,6 @@ const hStolas = {
   oncounterhit: 'HKD(+55)',
   clash: '3',
   motion: ['2', '2', 'h', 'l'],
-  description: 'Plus on block.\nOnly hits the area directly below Belial, limiting its use.'
 }
 
 const lBeleth = {
@@ -750,7 +750,6 @@ const lBeleth = {
   oncounterhit: 'KD',
   clash: '2',
   motion: ['2', '2', 'l', 'm'],
-  description: 'Plus on block.\nBelial dives at a shallower angle downwards, allowing him to hit opponents farther away. Hits at about the same angle as his command grab from Wings Bestowed.'
 }
 
 const mBeleth = {
@@ -766,7 +765,6 @@ const mBeleth = {
   oncounterhit: 'KD',
   clash: '2',
   motion: ['2', '2', 'm', 'm'],
-  description: 'Plus on block.\nBelial dives at a shallower angle downwards, allowing him to hit opponents farther away. Hits at about the same angle as his command grab from Wings Bestowed.'
 }
 
 const hBeleth = {
@@ -782,7 +780,6 @@ const hBeleth = {
   oncounterhit: 'HKD (+60)',
   clash: '2',
   motion: ['2', '2', 'h', 'm'],
-  description: 'Plus on block.\nBelial dives at a shallower angle downwards, allowing him to hit opponents farther away. Hits at about the same angle as his command grab from Wings Bestowed.'
 }
 
 const lBarbatos = {
@@ -798,7 +795,6 @@ const lBarbatos = {
   oncounterhit: '-',
   clash: '-',
   motion: ['2', '2', 'l', 'h'],
-  description: 'Fast command grab.\nSurprise option from Wings Bestowed. Does the most damage from the M version, but 2K from the others is nothing to sneeze at.'
 }
 
 const mBarbatos = {
@@ -814,7 +810,6 @@ const mBarbatos = {
   oncounterhit: '-',
   clash: '-',
   motion: ['2', '2', 'm', 'h'],
-  description: 'Fast command grab.\nSurprise option from Wings Bestowed. Does the most damage from the M version, but 2K from the others is nothing to sneeze at.'
 }
 
 const hBarbatos = {
@@ -830,7 +825,6 @@ const hBarbatos = {
   oncounterhit: '-',
   clash: '-',
   motion: ['2', '2', 'h', 'h'],
-  description: 'Fast command grab.\nSurprise option from Wings Bestowed. Does the most damage from the M version, but 2K from the others is nothing to sneeze at.'
 }
 
 const airLaser = {
@@ -845,7 +839,6 @@ const airLaser = {
   onhit: 'KD',
   oncounterhit: '-',
   clash: '-',
-  description: 'Uncharged version has a small hitbox.\nCharged version sweeps the screen.\nAvatar Belials long-range option while in Wings Bestowed. Knocks down on hit and deals respectable damage.'
 }
 
 const airLaserCharged = {
@@ -860,7 +853,6 @@ const airLaserCharged = {
   onhit: 'KD',
   oncounterhit: '-',
   clash: '-',
-  description: 'Uncharged version has a small hitbox.\nCharged version sweeps the screen.\nAvatar Belials long-range option while in Wings Bestowed. Knocks down on hit and deals respectable damage.'
 }
 
 // skybound art
@@ -877,7 +869,6 @@ const sba = {
   oncounterhit: 'HKD (T:+43, S:+33)',
   clash: '-',
   motion: ['236', '236', 'h', 'or', '236', 'a'],
-  description: "+43 KD advantage on technical input, +33 on simple.\nBelial performs a rising attack, followed by a downwards lunge."
 };
 
 const airSba = { 
@@ -893,7 +884,6 @@ const airSba = {
   oncounterhit: 'HKD (T:+43, S:+33)',
   clash: '-',
   motion: ['236', '236', 'h', 'or', '236', 'a'],
-  description: "+43 KD advantage on technical input, +33 on simple.\nBelial performs a rising attack, followed by a downwards lunge."
 };
 
 const ssba = { 
@@ -909,7 +899,6 @@ const ssba = {
   oncounterhit: '-',
   clash: '-',
   motion: ['236', '236', 'u', 'or', '236', 'a', 'u'],
-  description: "+41 KD advantage on technical input, +31 on simple.\nBelial's invincible command throw super. Can be combo'd into like a strike and turns into a projectile if the grab portion whiffs."
 };
 
 

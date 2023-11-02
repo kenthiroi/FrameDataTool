@@ -16,7 +16,6 @@ const closeL = {
   oncounterhit: '+6',
   clash: '1',
   motion: ['l'],
-  description: "Granblue Fantasy Versus c.L. +2 on block, +6 on hit, links into itself, 2L and c.M on regular hit, and 2M on crouching hit."
 };
 const closeM = {
   moveName: 'Close Medium',
@@ -31,7 +30,6 @@ const closeM = {
   oncounterhit: '+8',
   clash: '3',
   motion: ['m'],
-  description: "A standard Granblue c.M, frame traps from c.L and 2L. Due to being 0 on block and 6 frame start up, when pressed again, can crush far light normals when spaced correctly. Good for pressure due to this, but otherwise pretty unremarkable."
 };
 const closeH = {
   moveName: 'Close Heavy',
@@ -46,7 +44,6 @@ const closeH = {
   oncounterhit: '+11',
   clash: '5',
   motion: ['h'],
-  description: "Mostly combo filler, but can function as an anti-air if opponent is above you."
 };
 
 // auto combos
@@ -63,7 +60,6 @@ const auto1 = {
   oncounterhit: '+5',
   clash: '3',
   motion: ['l', 'l'],
-  description: ""
 };
 const auto2 = {
   moveName: 'Auto Combo 3rd hit',
@@ -78,7 +74,6 @@ const auto2 = {
   oncounterhit: '+8',
   clash: '4',
   motion: ['l', 'l', 'l'],
-  description: ""
 };
 const autoHighEnder = {
   moveName: 'Auto Combo High Ender',
@@ -123,7 +118,6 @@ const far5L = {
   oncounterhit: '+2',
   clash: '2',
   motion: ['l'],
-  description: "Links from 2L much more consistently than f.M, making it a great way to confirm into 214H from that normal. Somewhat useful as a poke."
 };
 const far5M = {
   moveName: 'Far Medium',
@@ -138,7 +132,6 @@ const far5M = {
   oncounterhit: '+2',
   clash: '3',
   motion: ['m'],
-  description: "+6 on counter hit on the second hitbox.\nDeals 2 Hits if you're close enough\nStrong pressure tool, links from 2L and c.L if close enough and frame traps from them no matter the distance. Easy to confirm from due to being 2 hits, which would matter far more if Belial's confirm tools were actually unsafe."
 };
 const far5H = {
   moveName: 'Far Heavy',
@@ -153,7 +146,51 @@ const far5H = {
   oncounterhit: '0',
   clash: '4, 3',
   motion: ['h'],
-  description: "Forces crouching on second hit.\n+4 on counter hit on the second hitbox.\n2 hit natural combo\n2nd hit does NOT cancel, only the first hit can\nCombos into 236H on first hit, useful in combos to extend into 214X. No longer combos on second hit CH, and you'll lose your turn on regular hit. Otherwise a pretty decent pressure button due to its range and forward momentum. Despite being -5 on block the only character who can actually punish it is Belial himself, using 2L. Still an extremely strong normal in neutral. Allows combos that would otherwise be impossible, thanks to Belial moving forward an absurd distance during its startup."
+};
+
+// dash normals
+
+const lDash = { 
+  moveName: 'L Dash Attack', 
+  altName: '-', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
+  active: '-', 
+  recovery: '-', 
+  onblock: '-', 
+  onhit: '-',
+  oncounterhit: '-',
+  clash: '-',
+  motion: ['-'],
+};
+const mDash = { 
+  moveName: 'M Dash Attack', 
+  altName: '-', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
+  active: '-', 
+  recovery: '-', 
+  onblock: '-', 
+  onhit: '-',
+  oncounterhit: '-',
+  clash: '-',
+  motion: ['-'],
+};
+const hDash = { 
+  moveName: 'H Dash Attack', 
+  altName: '-', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
+  active: '-', 
+  recovery: '-', 
+  onblock: '-', 
+  onhit: '-',
+  oncounterhit: '-',
+  clash: '-',
+  motion: ['-'],
 };
 
 // regular normals
@@ -170,7 +207,6 @@ const n2L = {
   oncounterhit: '+6',
   clash: '1',
   motion: ['2', 'l'],
-  description: "Not a low but nonetheless one of Belial's strongest defensive tools. It goes extremely far on its first active frame, significantly further than Lancelot's or either of Narmaya's 5L, allowing it to punish or beat moves that even those normals aren't capable of."
 };
 const n2M = {
   moveName: 'Crouch Medium',
@@ -185,7 +221,6 @@ const n2M = {
   oncounterhit: '+9',
   clash: '3',
   motion: ['2', 'm'],
-  description: "Hits low, +1 on block, decent range. The hitbox is extremely close to the ground, which can be exploited, but otherwise one of the most absurd normals in the game. Staple for pressure as it frame traps into 2L, c.L itself, f.M, and f.H depending on spacing and matchup. Also combos into 2L and c.L on normal hit, c.M on crouching hit, and f.M, C.H and f.H on counter hit."
 };
 const n2H = {
   moveName: 'Crouch Heavy',
@@ -200,7 +235,6 @@ const n2H = {
   oncounterhit: '0',
   clash: '4',
   motion: ['2', 'h'],
-  description: "Belial's designated anti-air normal, hitbox isn't as bad as it might seem. Combos from this tend to be finicky, and you might want to use c.H instead, but it's still useful to swat people out of the air."
 };
 const n2U = {
   moveName: 'Crouch Unique',
@@ -215,7 +249,6 @@ const n2U = {
   oncounterhit: 'HKD (+48)',
   clash: '3',
   motion: ['2', 'u'],
-  description: "Much longer than the average sweep in exchange for being significantly slower. Useful poke."
 };
 
 // jump normals
@@ -232,7 +265,6 @@ const jL = {
   oncounterhit: '-',
   clash: '2',
   motion: ['l'],
-  description: "Active until landing"
 };
 const jM = { 
   moveName: 'Jump Medium', 
@@ -247,7 +279,6 @@ const jM = {
   oncounterhit: '-',
   clash: '2',
   motion: ['m'],
-  description: "Can crossup"
 };
 const jH = { 
   moveName: 'Jump Heavy', 
@@ -262,7 +293,6 @@ const jH = {
   oncounterhit: '-',
   clash: '3',
   motion: ['h'],
-  description: "Despite the animation, this cannot hit crossup. Ridiculously big hitbox, great for air-to-airs and jump-ins."
 };
 const jU = { 
   moveName: 'Jump Unique', 
@@ -277,7 +307,6 @@ const jU = {
   oncounterhit: '+13',
   clash: '3',
   motion: ['u'],
-  description: "NOT an Overhead\nHigh recovery on whiff\nOn hit bounces off the opponent. You can direct where he goes by pressing left or right, allowing you to pick up a combo with either jM or jH"
 };
 
 // unique action
@@ -294,7 +323,6 @@ const lv1U = {
   oncounterhit: '-',
   clash: '-',
   motion: ['u'],
-  description: "Belial walks forward with his arms spread wide, and if he is attacked by anything other than a throw he will counterattack. The counterattack will track the opponent. Belial is in counterhit state if he gets hit between frame 1~3 but the recovery he is not in counterhit state. As well this move can be blocked or spot dodged in certain situations after the counter animation has triggered"
 };
 const lv2U = { 
   moveName: 'Give Daddy Some Sugar (Attack)', 
@@ -309,7 +337,6 @@ const lv2U = {
   oncounterhit: 'HKD (+47)',
   clash: '-',
   motion: ['u'],
-  description: "Belial walks forward with his arms spread wide, and if he is attacked by anything other than a throw he will counterattack. The counterattack will track the opponent. Belial is in counterhit state if he gets hit between frame 1~3 but the recovery he is not in counterhit state. As well this move can be blocked or spot dodged in certain situations after the counter animation has triggered"
 };
 
 
@@ -325,7 +352,6 @@ const groundThrow = {
   oncounterhit: '-',
   clash: '-',
   motion: ['l', 'm', 'or', 'l', 'u'],
-  description: ""
 };
 const backThrow = { 
   moveName: 'Back Throw', 
@@ -339,7 +365,6 @@ const backThrow = {
   oncounterhit: '-',
   clash: '-',
   motion: ['l', 'm', 'or', 'l', 'u'],
-  description: ""
 };
 const airThrow = { 
   moveName: 'Air Throw', 
@@ -353,7 +378,6 @@ const airThrow = {
   oncounterhit: '-',
   clash: '-',
   motion: ['l', 'm', 'or', 'l', 'u'],
-  description: ""
 };
 
 const uOverhead = { 
@@ -369,7 +393,6 @@ const uOverhead = {
   oncounterhit: '+13',
   clash: '5',
   motion: ['m', 'u'],
-  description: "Forces crouching"
 };
 
 //Tactical moves
@@ -386,7 +409,6 @@ const tacticalRush = {
   oncounterhit: '-',
   clash: '-',
   motion: ['6', 'm', 'h'],
-  description: '',
 }
 
 const tacticalRushCancel = {
@@ -401,7 +423,6 @@ const tacticalRushCancel = {
   oncounterhit: 'KD (+22)',
   clash: '-',
   motion: ['6', 'm', 'h'],
-  description: 'Strike invulnerable on frame 1-22.',
 }
 
 const tacticalShift = {
@@ -416,7 +437,6 @@ const tacticalShift = {
   oncounterhit: '-',
   clash: '-',
   motion: ['4', 'm', 'h'],
-  description: 'Invincible on frame 1-15.',
 }
 
 const overdriveActivation = {
@@ -431,7 +451,6 @@ const overdriveActivation = {
   oncounterhit: 'KD (+19)',
   clash: '-',
   motion: ['m', 'h'],
-  description: 'Invincible on frame 1-28, counterhit state on frame 29-61.'
 }
 
 // fireballs
@@ -448,7 +467,6 @@ const lFireball = {
   oncounterhit: '-4',
   clash: '-',
   motion: ['236', 'l', 'or', 'a'],
-  description: "Belial's projectile. Overall an extremely versatile tool.\nGoes forward and is used like a standard projectile, or to control space by transitioning into Everyone's A Little Crooked."
 };
 const mFireball = { 
   moveName: 'M Goetia', 
@@ -463,7 +481,6 @@ const mFireball = {
   oncounterhit: '-4',
   clash: '-',
   motion: ['236', 'm', 'or', 'a', 'm'],
-  description: "Belial's projectile. Overall an extremely versatile tool.\nGoes upward at about a 40 degree angle from Belial. Used to control air space occasionally, and sometimes to reset pressure, but never without the follow-up."
 };
 const hFireball = { 
   moveName: 'H Goetia', 
@@ -478,7 +495,6 @@ const hFireball = {
   oncounterhit: '+6',
   clash: '-',
   motion: ['236', 'h', 'or', 'a', 'h'],
-  description: "Belial's projectile. Overall an extremely versatile tool.\nFollows the same trajectory as 236L, and has three hits instead of one. What makes it unique to the other two versions is its ability to transition into Everyone's A Little Crooked even on hit and block, making it an extremely strong tool for midscreen combos and extending pressure from a frame trap. The H followup only combos on crouching opponents."
 };
 
 const lFireballFollowUp = {
@@ -494,7 +510,6 @@ const lFireballFollowUp = {
   oncounterhit: '+5',
   clash: '-',
   motion: ['236', 'l', '4', 'l'],
-  description: "Goetia followup which transforms the projectile into a spinning scythe that hits multiple times. The scythe takes a (very short) moment to spin up after transforming, during which the projectile does not have a hitbox. L followup causes the scythe to move forward, M followup causes the scythe to move backward, and H followup causes the scythe to decelerate and eventually spin in place.\nIn addition to the universal forward/backwards/stop commands, the L and M followups cause the scythe to move vertically up or down depending on which version of Goetia was initially used. For example, the forward moving L Goetia cancelled into L followup will cause the scythe to move up as well as forwards, while M Goetia into L followup will cause the scythe to move down as well as forwards. The specifics are as follows:\nThe L and M followups to L and H Goetia cause the projectile to move forwards & up and backwards & up respectively\nThe L and M followups to M Goetia cause the projectile to move forwards & down and backwards & down respectively\nThe H followups to all versions of Goetia do not affect the scythe's vertical positioning\nThe L and H followups push the opponent slightly on hit and block, while the M followup vacuums opponents towards Belial. The L and M followups hit 3 times, while the H followup hits 5 times."
 }
 
 const mFireballFollowUp = {
@@ -510,7 +525,6 @@ const mFireballFollowUp = {
   oncounterhit: '+5',
   clash: '-',
   motion: ['236', 'l', '4', 'm'],
-  description: "Goetia followup which transforms the projectile into a spinning scythe that hits multiple times. The scythe takes a (very short) moment to spin up after transforming, during which the projectile does not have a hitbox. L followup causes the scythe to move forward, M followup causes the scythe to move backward, and H followup causes the scythe to decelerate and eventually spin in place.\nIn addition to the universal forward/backwards/stop commands, the L and M followups cause the scythe to move vertically up or down depending on which version of Goetia was initially used. For example, the forward moving L Goetia cancelled into L followup will cause the scythe to move up as well as forwards, while M Goetia into L followup will cause the scythe to move down as well as forwards. The specifics are as follows:\nThe L and M followups to L and H Goetia cause the projectile to move forwards & up and backwards & up respectively\nThe L and M followups to M Goetia cause the projectile to move forwards & down and backwards & down respectively\nThe H followups to all versions of Goetia do not affect the scythe's vertical positioning\nThe L and H followups push the opponent slightly on hit and block, while the M followup vacuums opponents towards Belial. The L and M followups hit 3 times, while the H followup hits 5 times."
 }
 
 const hFireballFollowUp = {
@@ -526,7 +540,6 @@ const hFireballFollowUp = {
   oncounterhit: '+16',
   clash: '-',
   motion: ['236', 'l', '4', 'h'],
-  description: "Goetia followup which transforms the projectile into a spinning scythe that hits multiple times. The scythe takes a (very short) moment to spin up after transforming, during which the projectile does not have a hitbox. L followup causes the scythe to move forward, M followup causes the scythe to move backward, and H followup causes the scythe to decelerate and eventually spin in place.\nIn addition to the universal forward/backwards/stop commands, the L and M followups cause the scythe to move vertically up or down depending on which version of Goetia was initially used. For example, the forward moving L Goetia cancelled into L followup will cause the scythe to move up as well as forwards, while M Goetia into L followup will cause the scythe to move down as well as forwards. The specifics are as follows:\nThe L and M followups to L and H Goetia cause the projectile to move forwards & up and backwards & up respectively\nThe L and M followups to M Goetia cause the projectile to move forwards & down and backwards & down respectively\nThe H followups to all versions of Goetia do not affect the scythe's vertical positioning\nThe L and H followups push the opponent slightly on hit and block, while the M followup vacuums opponents towards Belial. The L and M followups hit 3 times, while the H followup hits 5 times."
 }
 
 // dragon punches
@@ -543,7 +556,6 @@ const lUppercut = {
   oncounterhit: 'KD',
   clash: '-',
   motion: ['623', 'l', 'or', '6', 'a'],
-  description: "Belial's reversal. One of the best DPs in the game. A standard DP with less air time than others, giving characters who thrive on air combos worse punishes."
 };
 const mUppercut = { 
   moveName: 'M Notoria', 
@@ -558,7 +570,6 @@ const mUppercut = {
   oncounterhit: 'KD',
   clash: '3',
   motion: ['623', 'm', 'or', '6', 'a', 'm'],
-  description: "Belial's reversal. One of the best DPs in the game. Has no invulnerability and only hits on the way down, but is plus on block. Can be used as a fakeout for people expecting the L version, but don't expect a good player to fall for it, as it can quite easily be interrupted with DP or even 2H on reaction. It can also be meatied to be a maximum of +7 on block while having 11 frames of recovery."
 };
 const hUppercut = { 
   moveName: 'H Notoria', 
@@ -573,7 +584,6 @@ const hUppercut = {
   oncounterhit: 'HKD (+48)',
   clash: '-',
   motion: ['623', 'h', 'or', '6', 'a', 'h'],
-  description: "Belial's reversal. One of the best DPs in the game. Reintroduces the invulnerability and adds a follow-up hit for significantly stronger okizeme and damage, making it a strong combo ender in many situations."
 };
 
 // rekka
@@ -590,7 +600,6 @@ const lRekka = {
   oncounterhit: 'KD',
   clash: '3',
   motion: ['214', 'l', 'or', '2', 'a'],
-  description: "An advancing strike. If it hits from close range, it will grab the opponent and do more damage. A combo ender that sees usage when you're too far for 236H/623H to hit, or if those specials are on cooldown. Can also be used as a frame trap, but it'll lose you your turn."
 };
 const mRekka = { 
   moveName: 'M Asmodeus', 
@@ -605,7 +614,6 @@ const mRekka = {
   oncounterhit: 'KD',
   clash: '4',
   motion: ['214', 'm', 'or', '4', 'a'],
-  description: "An advancing strike. If it hits from close range, it will grab the opponent and do more damage. A lso a combo ender, but can only be comboed into from c.H or full autocombo on crouching hit."
 };
 const hRekka = { 
   moveName: 'H Asmodeus', 
@@ -620,7 +628,6 @@ const hRekka = {
   oncounterhit: 'HKD (+63)',
   clash: '-',
   motion: ['214', 'h', 'or', '2', 'a', 'h'],
-  description: "An advancing strike. If it hits from close range, it will grab the opponent and do more damage. Launches the opponent and combos from basically any normal, leading to massive damage in corner. Post-236H nerf it's undoubtedly your best corner combo starter."
 };
 
 const lCmdThrow = {
@@ -635,7 +642,6 @@ const lCmdThrow = {
   onhit: 'HKD (+40)',
   oncounterhit: '-',
   clash: '-',
-  description: "A forward walk that ends in a command throw. Moves a short distance, but won't activate until Belial has walked its full length."
 }
 
 const mCmdThrow = {
@@ -650,7 +656,6 @@ const mCmdThrow = {
   onhit: 'HKD (+40)',
   oncounterhit: '-',
   clash: '-',
-  description: "A forward walk that ends in a command throw. Moves further. You probably won't use this at all due to its absurd startup."
 }
 
 const hCmdThrow = {
@@ -665,7 +670,6 @@ const hCmdThrow = {
   onhit: 'HKD (+40)',
   oncounterhit: '-',
   clash: '-',
-  description: "A forward walk that ends in a command throw. Will automatically activate once Belial is close, making it by far the most practical version, despite the EX flash being an additional telegraph."
 }
 
 // skybound art
@@ -682,7 +686,6 @@ const sba = {
   oncounterhit: '-',
   clash: '-',
   motion: ['236', '236', 'h', 'or', '236', 'a'],
-  description: "An invulnerable move that strikes first, then dashes forward with another strike, so it can be used against distant enemies too. The gap between the two hits is just long enough that if they input 4G during the flash, the second hit'll catch its recovery.\nAbsurdly short range for full damage if you use the simple input, so try not to do that."
 };
 const ssba = { 
   moveName: 'Anagenesis', 
@@ -697,7 +700,6 @@ const ssba = {
   oncounterhit: '-',
   clash: '-',
   motion: ['236', '236', 'u', 'or', '236', 'a', 'u'],
-  description: "Invulnerable. Kicks the enemy into the air, then finishes them off with Anagenesis. Useful for close combos, or to interrupt/punish the enemy."
 };
 
 
