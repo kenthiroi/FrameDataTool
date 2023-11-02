@@ -508,78 +508,48 @@ const airThrow = {
   motion: ['l', 'm', 'or', 'l', 'u'],
 };
 
-const uOverhead = { 
-  moveName: 'Overhead', 
-  altName: 'UOH', 
-  damage: '1000', 
-  guard: 'high', 
-  startup: '26', 
+// System Mechanics
+const ragingStrike = { 
+  moveName: 'Raging Strike', 
+  altName: 'Guard Crush', 
+  damage: 1000, 
+  guard: 'Unblockable', 
+  startup: 28, 
+  active: 6, 
+  recovery: 17, 
+  onblock: -4, 
+  onhit: 1,
+  oncounterhit: 13,
+  clash: 5,
+  motion: ['m', 'h'],
+};
+const ragingChain = {
+  moveName: 'Raging Chain',
+  altName: 'Guard Crush Followup', 
+  damage: '-', 
+  guard: '-', 
+  startup: '-', 
   active: '-', 
   recovery: '-', 
-  onblock: '-4', 
-  onhit: '1',
-  oncounterhit: '+2',
-  clash: '2',
-  motion: ['m', 'u'],
-};
-
-
-//Tactical moves
-
-const tacticalRush = {
-  moveName: 'Rush (Normal)',
-  damage: '-', 
-  guard: '-', 
-  startup: '-', 
-  active: '-', 
-  recovery: '68 (Entire move)', 
   onblock: '-', 
   onhit: '-',
   oncounterhit: '-',
   clash: '-',
   motion: ['6', 'm', 'h'],
 }
-
-const tacticalRushCancel = {
-  moveName: 'Rush (Cancel)',
-  damage: '-', 
-  guard: '-', 
-  startup: '8', 
-  active: '15', 
-  recovery: '20', 
-  onblock: '+4', 
-  onhit: 'KD (+22)',
-  oncounterhit: 'KD (+22)',
-  clash: '-',
-  motion: ['6', 'm', 'h'],
-}
-
-const tacticalShift = {
-  moveName: 'Back Shift',
+const braveCounter = {
+  moveName: 'Brave Counter',
+  altName: 'Guard Cancel',
   damage: '-', 
   guard: '-', 
   startup: '-', 
   active: '-', 
-  recovery: '30', 
+  recovery: '-', 
   onblock: '-', 
   onhit: '-',
   oncounterhit: '-',
   clash: '-',
-  motion: ['4', 'm', 'h'],
-}
-
-const overdriveActivation = {
-  moveName: 'Overdrive',
-  damage: '-', 
-  guard: 'Unblockable', 
-  startup: '26', 
-  active: '3', 
-  recovery: '33', 
-  onblock: '+19', 
-  onhit: 'KD (+19)',
-  oncounterhit: 'KD (+19)',
-  clash: '-',
-  motion: ['m', 'h'],
+  motion: ['6', 'm', 'h'],
 }
 
 // fireballs
@@ -811,9 +781,14 @@ export const yuelInfo = [
   closeH,
   auto1,
   auto2,
+  autoHighEnder,
+  autoLowEnder,
   far5L,
   far5M,
   far5H,
+  lDash,
+  mDash,
+  hDash,
   n2L,
   n2M,
   n2H,
@@ -836,11 +811,9 @@ export const yuelInfo = [
   stanceYugetsu,
   groundThrow,
   airThrow,
-  uOverhead,
-  tacticalRush,
-  tacticalRushCancel,
-  tacticalShift,
-  overdriveActivation,
+  ragingStrike,
+  ragingChain,
+  braveCounter,
   lFireball,
   mFireball,
   hFireball,
