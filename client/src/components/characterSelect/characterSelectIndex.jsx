@@ -1,4 +1,5 @@
 import React from "react";
+import CharacterItem from "./characterItem";
 
 function CharacterSelectIndex(props){
   
@@ -75,7 +76,7 @@ function CharacterSelectIndex(props){
   return (
     <div>
       {characterIndex.map(character => {
-
+          <CharacterItem character={character}/>
         })
       }
     </div>
