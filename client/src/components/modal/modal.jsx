@@ -11,6 +11,7 @@ function Modal({modal, closeModal}) {
     default:
       return null;
   }
+  
   return (
     <div>
       { component }
