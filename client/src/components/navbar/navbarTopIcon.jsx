@@ -20,4 +20,4 @@ function NavbarTopIcon(props){
   )
 }
 
-export default CharacterItem;
+export default NavbarTopIcon;

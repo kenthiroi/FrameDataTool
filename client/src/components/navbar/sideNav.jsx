@@ -9,4 +9,4 @@ function SideNav(props){
   )
 }
 
-export default CharacterItem;
+export default SideNav;

@@ -9,7 +9,7 @@ function Navbar(props){
   return (
     <div id="navbar">
       <div id="navbar-left">
-        <Sidenav/>
+        <SideNav/>
       </div>
       <div id="navbar-middle">
         <NavbarTopIcon/>
@@ -21,4 +21,4 @@ function Navbar(props){
   )
 }
 
-export default CharacterItem;
+export default Navbar;
