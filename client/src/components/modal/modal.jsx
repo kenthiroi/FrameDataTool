@@ -1,6 +1,7 @@
 import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
+import GameSelectIndex from './gameSelect/gameSelectIndex';
 
 function Modal({modal, closeModal}) {
   if (!modal) {
@@ -8,10 +9,13 @@ function Modal({modal, closeModal}) {
   }
   let component;
   switch (modal.type) {
+    case 'game':
+      component = <GameSelectIndex/>;
+      break;
     default:
       return null;
   }
-  
+
   return (
     <div>
       { component }
