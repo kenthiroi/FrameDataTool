@@ -4,9 +4,6 @@ import { openModal } from '../actions/modal_actions';
 
 function DataDisplay(props){
 
-
-  console.log('runnign');
-  
   return (
     <div id="data-display">
       <h1>Data Display Component</h1>

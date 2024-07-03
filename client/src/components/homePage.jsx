@@ -14,7 +14,7 @@ function HomePage(props){
 
 const mapDispatchToProps = dispatch => {
   return {
-    openGameSelectModal: dispatch(openModal({type: 'game'}))
+    openGameSelectModal: () => dispatch(openModal({type: 'game'}))
   }
 }
 
