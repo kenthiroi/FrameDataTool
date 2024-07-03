@@ -7,13 +7,16 @@ import ScrollToTop from './components/scrollToTop';
 import Navbar from './components/navbar/navbar';
 
 function App() {
+
+  console.log(HomePage);
+  
   return (
     <div className="App">
       <Navbar/>
+      {/* <ScrollToTop/> */}
       <Routes>
-        <Route exact path='/' component={HomePage}/>
-        <ScrollToTop/>
         <Route exact path='/data' component={DataDisplay}/>
+        <Route exact path='/' component={HomePage}/>
       </Routes>
     </div>
   );

@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import withRouter from './util/withRouter';
 import { openModal } from '../actions/modal_actions';
 
 function HomePage(props){
@@ -17,4 +18,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(null, mapDispatchToProps)(HomePage);
+export default withRouter(connect(null, mapDispatchToProps)(HomePage));
